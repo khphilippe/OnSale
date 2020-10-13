@@ -15,14 +15,32 @@ namespace OnSale.Web.Data
 
         public DbSet<Country> Countries { get; set; }
 
-         protected override void OnModelCreating(ModelBuilder modelBuilder)
-          {
-              base.OnModelCreating(modelBuilder);
+        public DbSet<City> Cities { get; set; }
+
+        public DbSet<Department> Departments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<City>()
+                .HasIndex(t => t.Name)
+                .IsUnique();
+        
+      
+          base.OnModelCreating(modelBuilder);
 
               modelBuilder.Entity<Country>()
                   .HasIndex(t => t.Name)
                   .IsUnique();
-          }
+
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Department>()
+                .HasIndex(t => t.Name)
+                .IsUnique();
+
+        }
       } 
 
     }
