@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OnSale.Common.Entities;
 using OnSale.Web.Data;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace OnSale.Web.Controllers
 {
@@ -56,7 +54,7 @@ namespace OnSale.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( Country country)
+        public async Task<IActionResult> Create(Country country)
         {
             if (ModelState.IsValid)
             {
@@ -86,8 +84,8 @@ namespace OnSale.Web.Controllers
             return View(country);
         }
 
-          
-        
+
+
 
         // GET: Countries/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -155,6 +153,9 @@ namespace OnSale.Web.Controllers
             }
 
             var country = await _context.Countries
+            .Include(c => c.Departments)
+             .ThenInclude(d => d.Cities)
+
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (country == null)
             {
@@ -234,6 +235,76 @@ namespace OnSale.Web.Controllers
             }
 
             return View(department);
+        }
+        public async Task<IActionResult> EditDepartment(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Department department = await _context.Departments.FindAsync(id);
+            if (department == null)
+            {
+                return NotFound();
+            }
+
+            Country country = await _context.Countries.FirstOrDefaultAsync(c => c.Departments.FirstOrDefault(d => d.Id == department.Id) != null);
+            department.IdCountry = country.Id;
+            return View(department);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditDepartment(Department department)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(department);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction($"{nameof(Details)}/{department.IdCountry}");
+
+                }
+                catch (DbUpdateException dbUpdateException)
+                {
+                    if (dbUpdateException.InnerException.Message.Contains("duplicate"))
+                    {
+                        ModelState.AddModelError(string.Empty, "There are a record with the same name.");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, dbUpdateException.InnerException.Message);
+                    }
+                }
+                catch (Exception exception)
+                {
+                    ModelState.AddModelError(string.Empty, exception.Message);
+                }
+            }
+            return View(department);
+        }
+        public async Task<IActionResult> DeleteDepartment(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            Department department = await _context.Departments
+                .Include(d => d.Cities)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (department == null)
+            {
+                return NotFound();
+            }
+
+            Country country = await _context.Countries.FirstOrDefaultAsync(c => c.Departments.FirstOrDefault(d => d.Id == department.Id) != null);
+            _context.Departments.Remove(department);
+            await _context.SaveChangesAsync();
+            return RedirectToAction($"{nameof(Details)}/{country.Id}");
+
         }
 
     }
