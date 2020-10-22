@@ -21,3 +21,4 @@ namespace OnSale.Common.Entities
     }
 
 }
+
