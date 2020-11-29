@@ -34,7 +34,10 @@ namespace OnSale.Web.Data.Entities
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
             ? $"https://onsaleweb202011.azurewebsites.net/images/noimage.png"
-            : $"https://onsale.blob.core.windows.net/users/{ImageId}";
+            : $"https://onsale12.blob.core.windows.net/users/{ImageId}";
+
+        /* ? $"https://onsaleweb202011.azurewebsites.net/images/noimage.png"
+            : $"https://onsale12.blob.core.windows.net/categories/{ImageId}"; */
 
         [Display(Name = "User Type")]
         public UserType UserType { get; set; }
