@@ -19,8 +19,8 @@ namespace OnSale.Common.Entities
         
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://onsaleweb202011.azurewebsites.net/images/noimage.png"
-            : $"https://onsale12.blob.core.windows.net/categories/{ImageId}";
+            ? $"https://onsaleweb18.azurewebsites.net/images/noimage.png"
+            : $"https://onsale18.blob.core.windows.net/categories/{ImageId}";
     }
 
 }
