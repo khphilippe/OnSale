@@ -12,7 +12,8 @@ using System.Threading.Tasks;
 
 namespace OnSale.Web.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")] 
+    
     public class CategoriesController : Controller
     {
         private readonly DataContext _context;
