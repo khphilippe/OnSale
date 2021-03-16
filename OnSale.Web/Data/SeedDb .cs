@@ -137,6 +137,41 @@ namespace OnSale.Web.Data
                     }
                 }
                 });
+                _context.Countries.Add(new Country
+                {
+                    Name = "Argentina",
+                    Departments = new List<Department>
+                {
+                    new Department
+                    {
+                        Name = "Buenos Aires",
+                        Cities = new List<City>
+                        {
+                            new City { Name = "Ciudad de buenos aires" },
+                            new City { Name = "Ituzaingo" },
+                            new City { Name = "Moron" }
+                        }
+                    },
+                    new Department
+                    {
+                        Name = "Santa fe",
+                        Cities = new List<City>
+                        {
+                            new City { Name = "Santa fe" }
+                        }
+                    },
+                    new Department
+                    {
+                        Name = "chubut  ",
+                        Cities = new List<City>
+                        {
+                            new City { Name = "Rawson" },
+                            new City { Name = "lol" },
+                            new City { Name = "lo" }
+                        }
+                    }
+                }
+                });
                 await _context.SaveChangesAsync();
             }
         }

@@ -1,10 +1,11 @@
 ﻿using Foundation;
 using Prism;
 using Prism.Ioc;
+using Syncfusion.SfBusyIndicator.XForms.iOS;
 using UIKit;
 
 
-namespace Onsale.Prism.iOS
+namespace OnSale.Prism.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
@@ -23,7 +24,8 @@ namespace Onsale.Prism.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new iOSInitializer()));
-
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
+            new SfBusyIndicatorRenderer();
             return base.FinishedLaunching(app, options);
         }
     }

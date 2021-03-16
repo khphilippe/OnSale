@@ -3,8 +3,9 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Syncfusion.SfBusyIndicator.XForms.Droid;
 
-namespace Onsale.Prism.Droid
+namespace OnSale.Prism.Droid
 {
     [Activity(Theme = "@style/MainTheme",
               ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
@@ -18,6 +19,8 @@ namespace Onsale.Prism.Droid
             base.OnCreate(savedInstanceState);
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            new SfBusyIndicatorRenderer();
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             LoadApplication(new App(new AndroidInitializer()));
         }
 

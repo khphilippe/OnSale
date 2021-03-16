@@ -165,8 +165,6 @@ namespace OnSale.Web.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.HasIndex("Name")
-                       .IsUnique();
                     b.HasIndex("Name", "DepartmentId")
                         .IsUnique()
                         .HasFilter("[DepartmentId] IS NOT NULL");

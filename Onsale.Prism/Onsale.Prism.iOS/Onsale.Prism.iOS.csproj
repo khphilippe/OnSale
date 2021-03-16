@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{56536D18-D0C9-442B-9A2C-F624AA02D0AE}</ProjectGuid>
+    <ProjectGuid>{D96897AD-F184-4BBD-A95B-40091E637D31}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Onsale.Prism.iOS</RootNamespace>
+    <RootNamespace>OnSale.Prism.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Onsale.Prism.iOS</AssemblyName>
+    <AssemblyName>OnSale.Prism.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -198,18 +198,24 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator.IOS">
+      <Version>18.4.0.48</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.11.982</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1791-pre5" />
-    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.6.0-pre5" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.6.1" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="8.0.0.1909" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Onsale.Prism\Onsale.Prism.csproj">
+    <ProjectReference Include="..\OnSale.Prism\OnSale.Prism.csproj">
       <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
-      <Name>Onsale.Prism</Name>
+      <Name>OnSale.Prism</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_more_vert.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

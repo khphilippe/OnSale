@@ -2,10 +2,15 @@
 <prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
-             x:Class="Onsale.Prism.App">
-  <Application.Resources>
+             x:Class="OnSale.Prism.App">
+    <Application.Resources>
 
-    <!-- Application resource dictionary -->
+        <ResourceDictionary>
 
-  </Application.Resources>
+
+            <x:String x:Key="UrlAPI">http://OnSaleKevs.somee.com</x:String>
+
+        </ResourceDictionary> 
+
+    </Application.Resources>
 </prism:PrismApplication>

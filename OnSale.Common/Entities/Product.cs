@@ -36,7 +36,7 @@ namespace OnSale.Common.Entities
 
         [Display(Name = "Image")]
         public string ImageFullPath => ProductImages == null || ProductImages.Count == 0
-            ? $"https://onsaleweb18.azurewebsites.net/images/noimage.png"
+            ? $"https://onsalewebkevs2021.azurewebsites.net/images/noimage.png"
             : ProductImages.FirstOrDefault().ImageFullPath;
     }
 
