@@ -23,7 +23,13 @@ namespace OnSale.Prism.ItemViewModels
 
         private async void SelectProductAsync()
         {
-            await _navigationService.NavigateAsync(nameof(ProductDetailPage));
+           
+            NavigationParameters parameters = new NavigationParameters
+            {
+            { "product", this }
+            };
+
+            await _navigationService.NavigateAsync(nameof(ProductDetailPage), parameters);
         }
     }
 

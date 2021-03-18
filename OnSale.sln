@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnSale.Common", "OnSale.Com
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnSale.Web", "OnSale.Web\OnSale.Web.csproj", "{06B9322A-111E-4DCB-A3F8-61D5FB2C811A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSale.Prism", "OnSale.Prism\OnSale.Prism\OnSale.Prism.csproj", "{5B130159-49D8-47AF-9593-3A87F2BA9FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnSale.Prism", "OnSale.Prism\OnSale.Prism\OnSale.Prism.csproj", "{5B130159-49D8-47AF-9593-3A87F2BA9FFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSale.Prism.Android", "OnSale.Prism\OnSale.Prism.Android\OnSale.Prism.Android.csproj", "{3F545F6C-4628-46F1-935A-A906984599FB}"
 EndProject
@@ -162,6 +162,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_PrefixTranslations = False
 		SolutionGuid = {81EFECC2-658D-42DB-B16A-226D530D5089}
 	EndGlobalSection
 EndGlobal
