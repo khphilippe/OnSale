@@ -126,7 +126,6 @@
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
-
   <data name="Loading" xml:space="preserve">
     <value>Cargando...</value>
   </data>
@@ -157,5 +156,53 @@
   <data name="Products" xml:space="preserve">
     <value>Productos</value>
   </data>
+  <data name="Login" xml:space="preserve">
+    <value>Iniciar Sesión</value>
+  </data>
+  <data name="ModifyUser" xml:space="preserve">
+    <value>Modificar usuario</value>
+  </data>
+  <data name="ShowPurchaseHistory" xml:space="preserve">
+    <value>Mostrar historial de compras</value>
+  </data>
+  <data name="ShowShoppingCar" xml:space="preserve">
+    <value>Mostrar carro de compras</value>
+  </data>
+  <data name="YourBusiness" xml:space="preserve">
+    <value>Administrar su negocio</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailPlaceHolder" xml:space="preserve">
+    <value>Enter your email...</value>
+  </data>
+  <data name="EmailError" xml:space="preserve">
+    <value>You must enter a valid email.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordPlaceHolder" xml:space="preserve">
+    <value>Enter your password...</value>
+  </data>
+  <data name="PasswordError" xml:space="preserve">
+    <value>You must enter your password.</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrar su nuevo usuario</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Correo electrónico o contraseña incorrectos</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
 
+  <data name="Salutation" xml:space="preserve">
+  <value>Oi</value>
+  </data>
 </root>

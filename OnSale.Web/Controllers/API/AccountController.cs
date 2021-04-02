@@ -48,6 +48,7 @@ namespace OnSale.Web.Controllers.API
                         new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                         new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                     };
+                        
 
                         SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Tokens:Key"]));
                         SigningCredentials credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

@@ -361,11 +361,7 @@ namespace OnSale.Web.Controllers
             return View(model);
         }
 
-
-
-
     }
-
 
 }
 

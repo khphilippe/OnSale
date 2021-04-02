@@ -47,6 +47,41 @@ namespace OnSale.Prism.Helpers
         public static string Products => Resource1.Products;
 
 
+        public static string Login => Resource1.Login;
+
+        public static string ShowShoppingCar => Resource1.ShowShoppingCar;
+
+        public static string ShowPurchaseHistory => Resource1.ShowPurchaseHistory;
+
+        public static string ModifyUser => Resource1.ModifyUser;
+
+        public static string YourBusiness => Resource1.YourBusiness;
+
+
+        public static string Email => Resource1.Email;
+
+        public static string EmailError => Resource1.EmailError;
+
+        public static string EmailPlaceHolder => Resource1.EmailPlaceHolder;
+
+        public static string Password => Resource1.Password;
+
+        public static string PasswordError => Resource1.PasswordError;
+
+        public static string PasswordPlaceHolder => Resource1.PasswordPlaceHolder;
+
+        public static string ForgotPassword => Resource1.ForgotPassword;
+
+        public static string LoginError => Resource1.LoginError;
+
+        public static string Logout => Resource1.Logout;
+
+
+        public static string Salutation => Resource1.Salutation;
+
+
+
+
     }
 
 }
