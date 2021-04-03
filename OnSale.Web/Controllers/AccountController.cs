@@ -372,6 +372,7 @@ namespace OnSale.Web.Controllers
             return View(model);
         }
 
+
         [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult Create()
@@ -433,6 +434,7 @@ namespace OnSale.Web.Controllers
             model.Cities = _combosHelper.GetComboCities(model.DepartmentId);
             return View(model);
         }
+
 
 
     }
