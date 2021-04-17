@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OnSale.Common.Entities.Product>
+﻿@model IEnumerable<OnSale.Web.Data.Entities.Product>
 
 @{
     ViewData["Title"] = "Index";
@@ -99,4 +99,5 @@
             sc_deleteDialog.openModal('deleteItem', true, 'btnYesDelete', '/Products/Delete/', false);
         });
     </script>
+
 }

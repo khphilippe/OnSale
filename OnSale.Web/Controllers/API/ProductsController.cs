@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OnSale.Web.Data;
+using OnSale.Web.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +21,25 @@ namespace OnSale.Web.Controllers.API
         }
 
         [HttpGet]
-        public IActionResult GetProducts()
+        /* public IActionResult GetProducts()
+         {
+             return Ok(_context.Products
+                 .Include(c => c.Category)
+                 .Include(d => d.ProductImages)
+                 .OrderBy(P=>P.Name));
+         } */
+
+        [HttpGet]
+        public async Task<IActionResult> GetProducts()
         {
-            return Ok(_context.Products
-                .Include(c => c.Category)
-                .Include(d => d.ProductImages)
-                .OrderBy(P=>P.Name));
+            List<Product> products = await _context.Products
+                .Include(p => p.Category)
+                .Include(p => p.ProductImages)
+                .Include(p => p.Qualifications)
+                .Where(p => p.IsActive)
+                .ToListAsync();
+            return Ok(products);
         }
+
     }
 }
