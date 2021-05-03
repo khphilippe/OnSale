@@ -80,7 +80,7 @@ namespace OnSale.Prism.Helpers
         public static string Salutation => Resource1.Salutation;
 
 
-
+        public static string LoginFirstMessage => Resource1.LoginFirstMessage;
 
     }
 

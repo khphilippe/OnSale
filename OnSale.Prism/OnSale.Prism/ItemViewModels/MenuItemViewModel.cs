@@ -1,11 +1,9 @@
 ﻿using OnSale.Common.Helpers;
 using OnSale.Common.Models;
+using OnSale.Prism.Helpers;
 using OnSale.Prism.Views;
 using Prism.Commands;
 using Prism.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OnSale.Prism.ItemViewModels
 {
@@ -35,13 +33,29 @@ namespace OnSale.Prism.ItemViewModels
             }
 
             await _navigationService.NavigateAsync($"/{nameof(OnSaleMasterDetailPage)}/NavigationPage/{PageName}");
+
+
+            if (IsLoginRequired && !Settings.IsLogin)
+            {
+                await App.Current.MainPage.DisplayAlert(Languages.Error, Languages.LoginFirstMessage, Languages.Accept);
+                NavigationParameters parameters = new NavigationParameters
+        {
+            { "pageReturn", PageName }
+        };
+
+                await _navigationService.NavigateAsync($"/{nameof(OnSaleMasterDetailPage)}/NavigationPage/{nameof(LoginPage)}", parameters);
+            }
+            else
+            {
+                await _navigationService.NavigateAsync($"/{nameof(OnSaleMasterDetailPage)}/NavigationPage/{PageName}");
+            }
         }
 
         /// <summary>
         /// 
         /// </summary>
         public DelegateCommand SelectHeadMenuCommand => _selectHeadMenuCommand ??
-           (_selectHeadMenuCommand = new DelegateCommand(SelectHeadMenuAsync));
+                   (_selectHeadMenuCommand = new DelegateCommand(SelectHeadMenuAsync));
 
         private async void SelectHeadMenuAsync()
         {

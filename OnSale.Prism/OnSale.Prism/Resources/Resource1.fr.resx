@@ -205,4 +205,9 @@
     <data name="Salutation" xml:space="preserve">
     <value>Bonjour</value>
 </data>
+
+    <data name="LoginFirstMessage" xml:space="preserve">
+    <value>Pour compléter cette action vous devez connecter á votre compte. Vous pouvez vous connecter ou s'inscrire tout de suite.</value>
+  </data>
+
 </root>
