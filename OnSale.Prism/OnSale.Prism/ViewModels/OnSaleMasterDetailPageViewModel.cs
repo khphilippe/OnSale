@@ -82,7 +82,8 @@ namespace OnSale.Prism.ViewModels
               {
                 Icon = "ic_action_shopping_cart",
                 PageName = $"{nameof(ShowCarPage)}",
-                Title = Languages.ShowShoppingCar
+                Title = Languages.ShowShoppingCar,
+                IsLoginRequired = true
               },
               new Menu
               {

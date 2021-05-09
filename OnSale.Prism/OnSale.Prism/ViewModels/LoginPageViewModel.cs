@@ -23,6 +23,7 @@ namespace OnSale.Prism.ViewModels
         private bool _isRunning;
         private bool _isEnabled;
         private string _password;
+        private string _pageReturn;
         private DelegateCommand _loginCommand;
         private DelegateCommand _registerCommand;
         private DelegateCommand _forgotPasswordCommand;
@@ -61,6 +62,15 @@ namespace OnSale.Prism.ViewModels
             get => _password;
             set => SetProperty(ref _password, value);
         }
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            base.OnNavigatedTo(parameters);
+            if (parameters.ContainsKey("pageReturn"))
+            {
+                _pageReturn = parameters.GetValue<string>("pageReturn");
+            }
+        }
+
 
         private async void LoginAsync()
         {
@@ -118,8 +128,15 @@ namespace OnSale.Prism.ViewModels
             IsRunning = false;
             IsEnabled = true;
 
-            await _navigationService.NavigateAsync($"/{nameof(OnSaleMasterDetailPage)}/NavigationPage/{nameof(ProductsPage)}");
-            Password = string.Empty;
+            if (string.IsNullOrEmpty(_pageReturn))
+            {
+                await _navigationService.NavigateAsync($"/{nameof(OnSaleMasterDetailPage)}/NavigationPage/{nameof(ProductsPage)}");
+            }
+            else
+            {
+                await _navigationService.NavigateAsync($"/{nameof(OnSaleMasterDetailPage)}/NavigationPage/{_pageReturn}");
+            }
+
         }
 
         private void ForgotPasswordAsync()
@@ -208,6 +225,7 @@ namespace OnSale.Prism.ViewModels
     }
 
     */
+
 }
 
 
