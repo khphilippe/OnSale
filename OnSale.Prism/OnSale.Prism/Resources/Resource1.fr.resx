@@ -210,4 +210,24 @@
     <value>Pour compléter cette action vous devez  connecter á votre compte. Vous pouvez vous connecter ou s'inscrire tout de suite.</value>
   </data>
 
+    <data name="Qualification" xml:space="preserve">
+        <value>Qualification</value>
+  </data>
+    <data name="Qualifications" xml:space="preserve">
+        <value>Qualifications</value>
+  </data>
+    <data name="QualificationNumber" xml:space="preserve">
+    <value>Nombre de qualification</value>
+  </data>
+    <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+    <data name="Remarks" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+    <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+
+
 </root>

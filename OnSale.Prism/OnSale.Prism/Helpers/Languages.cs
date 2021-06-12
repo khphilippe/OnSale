@@ -82,6 +82,15 @@ namespace OnSale.Prism.Helpers
 
         public static string LoginFirstMessage => Resource1.LoginFirstMessage;
 
+        public static string Qualification => Resource1.Qualification;
+
+        public static string Qualifications => Resource1.Qualifications;
+
+        public static string QualificationNumber => Resource1.QualificationNumber;
+
+        public static string Details => Resource1.Details;
+
+
     }
 
 }
