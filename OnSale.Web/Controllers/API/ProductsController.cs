@@ -35,7 +35,7 @@ namespace OnSale.Web.Controllers.API
             List<Product> products = await _context.Products
                 .Include(p => p.Category)
                 .Include(p => p.ProductImages)
-              //  .Include(p => p.Qualifications)
+               .Include(p => p.Qualifications)
                 .Where(p => p.IsActive)
                 .ToListAsync();
             return Ok(products);

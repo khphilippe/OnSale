@@ -209,7 +209,7 @@ namespace OnSale.Web.Data
         {
             if (!_context.Products.Any())
             {
-                User user = await _userHelper.GetUserAsync("onsalekevs@gmail.com");
+                User user = await _userHelper.GetUserAsync("herbysonphilippe@hotmail.com");
                 Category frutas = await _context.Categories.FirstOrDefaultAsync(c => c.Name == "Frutas");
                 Category tecnologia = await _context.Categories.FirstOrDefaultAsync(c => c.Name == "Tecnología");
                 string lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida, nunc vel tristique cursus, velit nibh pulvinar enim, non pulvinar lorem leo eget felis. Proin suscipit dignissim nisl, at elementum justo laoreet sed. In tortor nibh, auctor quis est gravida, blandit elementum nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer placerat nisi dui, id rutrum nisi viverra at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sodales sollicitudin tempor. Fusce volutpat, purus sit amet placerat gravida, est magna gravida risus, a ultricies augue magna vel dolor. Fusce egestas venenatis velit, a ultrices purus aliquet sed. Morbi lacinia purus sit amet nisi vulputate mollis. Praesent in volutpat tortor. Etiam ac enim id ligula rutrum semper. Sed mattis erat sed condimentum congue. Vestibulum consequat tristique consectetur. Nunc in lorem in sapien vestibulum aliquet a vel leo.";
