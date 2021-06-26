@@ -17,6 +17,7 @@ namespace OnSale.Prism.ItemViewModels
         public ProductItemViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
+            
         }
 
         public DelegateCommand SelectProductCommand =>
@@ -30,7 +31,7 @@ namespace OnSale.Prism.ItemViewModels
             { "product", this }
             };
 
-            await _navigationService.NavigateAsync(nameof(ProductDetailPage), parameters);
+            await _navigationService.NavigateAsync(nameof(ProductTabbedPage), parameters);
         }
     }
 

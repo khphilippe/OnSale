@@ -18,8 +18,8 @@ namespace OnSale.Prism.ViewModels
         private ObservableCollection<ProductImage> _images;
         public ProductDetailPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Title = Languages.Product;
-          //  Title = "Product";
+            Title = Languages.Details;
+            //  Title = "Product";
         }
 
         public ObservableCollection<ProductImage> Images

@@ -42,9 +42,12 @@ namespace OnSale.Prism
             containerRegistry.RegisterForNavigation<ModifyUserPage, ModifyUserPageViewModel>();
             containerRegistry.RegisterForNavigation<BusinessPage, BusinessPageViewModel>();
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
-           // containerRegistry.RegisterForNavigation<BusinessPage, BusinessPageViewModel>();
+            // containerRegistry.RegisterForNavigation<BusinessPage, BusinessPageViewModel>();
 
 
+            containerRegistry.RegisterForNavigation<QualificationsPage, QualificationsPageViewModel>();
+            containerRegistry.RegisterForNavigation<QualificationDetailPage, QualificationDetailPageViewModel>();
+            containerRegistry.RegisterForNavigation<ProductTabbedPage, ProductTabbedPageViewModel>();
         }
     }
 }
