@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-    <!--
+  <!--
       Microsoft ResX Schema
 
       Version 2.0
@@ -59,175 +59,302 @@
               : using a System.ComponentModel.TypeConverter
               : and then encoded with base64 encoding.
       -->
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-        <xsd:element name="root" msdata:IsDataSet="true">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
             <xsd:complexType>
-                <xsd:choice maxOccurs="unbounded">
-                    <xsd:element name="metadata">
-                        <xsd:complexType>
-                            <xsd:sequence>
-                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                            </xsd:sequence>
-                            <xsd:attribute name="name" use="required" type="xsd:string" />
-                            <xsd:attribute name="type" type="xsd:string" />
-                            <xsd:attribute name="mimetype" type="xsd:string" />
-                            <xsd:attribute ref="xml:space" />
-                        </xsd:complexType>
-                    </xsd:element>
-                    <xsd:element name="assembly">
-                        <xsd:complexType>
-                            <xsd:attribute name="alias" type="xsd:string" />
-                            <xsd:attribute name="name" type="xsd:string" />
-                        </xsd:complexType>
-                    </xsd:element>
-                    <xsd:element name="data">
-                        <xsd:complexType>
-                            <xsd:sequence>
-                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                            </xsd:sequence>
-                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-                            <xsd:attribute ref="xml:space" />
-                        </xsd:complexType>
-                    </xsd:element>
-                    <xsd:element name="resheader">
-                        <xsd:complexType>
-                            <xsd:sequence>
-                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                            </xsd:sequence>
-                            <xsd:attribute name="name" type="xsd:string" use="required" />
-                        </xsd:complexType>
-                    </xsd:element>
-                </xsd:choice>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
-        </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
-        <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
-        <value>2.0</value>
-    </resheader>
-    <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <data name="Accept" xml:space="preserve">
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Accept" xml:space="preserve">
     <value>Accepter</value>
   </data>
-    <data name="AddToCart" xml:space="preserve">
+  <data name="AddToCart" xml:space="preserve">
     <value>Ajouter au panier</value>
   </data>
-    <data name="Category" xml:space="preserve">
+  <data name="Category" xml:space="preserve">
     <value>Categorie</value>
   </data>
-    <data name="ConnectionError" xml:space="preserve">
+  <data name="ConnectionError" xml:space="preserve">
     <value>Vérifier votre connexion internet</value>
   </data>
-    <data name="Description" xml:space="preserve">
+  <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
-    <data name="Error" xml:space="preserve">
+  <data name="Error" xml:space="preserve">
     <value>Erreur</value>
   </data>
-    <data name="IsStarred" xml:space="preserve">
+  <data name="IsStarred" xml:space="preserve">
     <value>Est étoillé</value>
   </data>
-    <data name="Loading" xml:space="preserve">
+  <data name="Loading" xml:space="preserve">
     <value>Chargement en cours...</value>
   </data>
-    <data name="Name" xml:space="preserve">
+  <data name="Name" xml:space="preserve">
     <value>Nom</value>
   </data>
-    <data name="Price" xml:space="preserve">
+  <data name="Price" xml:space="preserve">
     <value>Prix</value>
   </data>
-    <data name="Product" xml:space="preserve">
+  <data name="Product" xml:space="preserve">
     <value>Produit</value>
   </data>
-    <data name="Products" xml:space="preserve">
+  <data name="Products" xml:space="preserve">
     <value>Produits</value>
   </data>
-    <data name="SearchProduct" xml:space="preserve">
+  <data name="SearchProduct" xml:space="preserve">
     <value>Chercher un produit...</value>
   </data>
-    <data name="Login" xml:space="preserve">
+  <data name="Login" xml:space="preserve">
     <value>Se connecter</value>
   </data>
-    <data name="ModifyUser" xml:space="preserve">
+  <data name="ModifyUser" xml:space="preserve">
     <value>Modifier l'utilisateur</value>
   </data>
-    <data name="ShowPurchaseHistory" xml:space="preserve">
+  <data name="ShowPurchaseHistory" xml:space="preserve">
     <value>Montrer l'historique des achats</value>
   </data>
-    <data name="ShowShoppingCar" xml:space="preserve">
+  <data name="ShowShoppingCar" xml:space="preserve">
     <value>Montrer le panier</value>
   </data>
-    <data name="YourBusiness" xml:space="preserve">
+  <data name="YourBusiness" xml:space="preserve">
     <value>Gérez votre entreprise</value>
   </data>
-    <data name="Email" xml:space="preserve">
+  <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
-    <data name="EmailPlaceHolder" xml:space="preserve">
+  <data name="EmailPlaceHolder" xml:space="preserve">
     <value>Tapez votre email...</value>
   </data>
-    <data name="EmailError" xml:space="preserve">
+  <data name="EmailError" xml:space="preserve">
     <value>Vous devez entrer un email valide.</value>
   </data>
-    <data name="Password" xml:space="preserve">
+  <data name="Password" xml:space="preserve">
     <value>Mot de passe</value>
   </data>
-    <data name="PasswordPlaceHolder" xml:space="preserve">
+  <data name="PasswordPlaceHolder" xml:space="preserve">
     <value>Tapez votre mot de passe...</value>
   </data>
-    <data name="PasswordError" xml:space="preserve">
+  <data name="PasswordError" xml:space="preserve">
     <value>Vous devez entrer votre mot de passe.</value>
   </data>
-    <data name="ForgotPassword" xml:space="preserve">
+  <data name="ForgotPassword" xml:space="preserve">
     <value>Mot de passe oublier?</value>
   </data>
-    <data name="Register" xml:space="preserve">
+  <data name="Register" xml:space="preserve">
     <value>Enregistrer votre nouveau utilisateur</value>
   </data>
-    <data name="LoginError" xml:space="preserve">
+  <data name="LoginError" xml:space="preserve">
     <value>Email ou mot de passe incorrect</value>
   </data>
-    <data name="Logout" xml:space="preserve">
+  <data name="Logout" xml:space="preserve">
     <value>Se déconnecter</value>
   </data>
-
-    <data name="Salutation" xml:space="preserve">
+  <data name="Salutation" xml:space="preserve">
     <value>Bonjour</value>
 </data>
-
-    <data name="LoginFirstMessage" xml:space="preserve">
+  <data name="LoginFirstMessage" xml:space="preserve">
     <value>Pour compléter cette action vous devez  connecter á votre compte. Vous pouvez vous connecter ou s'inscrire tout de suite.</value>
   </data>
-
-    <data name="Qualification" xml:space="preserve">
-        <value>Qualification</value>
+  <data name="Qualification" xml:space="preserve">
+    <value>Qualification</value>
   </data>
-    <data name="Qualifications" xml:space="preserve">
-        <value>Qualifications</value>
+  <data name="Qualifications" xml:space="preserve">
+    <value>Qualifications</value>
   </data>
-    <data name="QualificationNumber" xml:space="preserve">
+  <data name="QualificationNumber" xml:space="preserve">
     <value>Nombre de qualification</value>
   </data>
-    <data name="Date" xml:space="preserve">
+  <data name="Date" xml:space="preserve">
     <value>Date</value>
   </data>
-    <data name="Remarks" xml:space="preserve">
+  <data name="Remarks" xml:space="preserve">
     <value>Commentaires</value>
   </data>
-    <data name="Details" xml:space="preserve">
+  <data name="Details" xml:space="preserve">
     <value>Details</value>
   </data>
-
-
+  <data name="RemarksPlaceHolder" xml:space="preserve">
+    <value>Entrez votre commentaire...</value>
+  </data>
+  <data name="QualificationError" xml:space="preserve">
+    <value>Vous devez sélectionner une qualification .</value>
+  </data>
+  <data name="NewQualification" xml:space="preserve">
+    <value>Nouveau qualification</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="DocumentPlaceHolder" xml:space="preserve">
+    <value>Entrez votre numero de document...</value>
+  </data>
+  <data name="DocumentError" xml:space="preserve">
+    <value>Vous devez entrer votre numero de document.</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="FirstNamePlaceHolder" xml:space="preserve">
+    <value>Tapez votre nom...</value>
+  </data>
+  <data name="FirstNameError" xml:space="preserve">
+    <value>Vous devez tapez au moins un nom.</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="LastNamePlaceHolder" xml:space="preserve">
+    <value>Tapez votre prénom...</value>
+  </data>
+  <data name="LastNameError" xml:space="preserve">
+        <value>Vous devez tapez au moins un prénom.</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="AddressPlaceHolder" xml:space="preserve">
+    <value>Entrez votre adresse...</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="PhoneError" xml:space="preserve">
+    <value>Ingresa tu teléfono...</value>
+  </data>
+  <data name="PhonePlaceHolder" xml:space="preserve">
+    <value>Debes ingresar tu teléfono.</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="PasswordConfirm" xml:space="preserve">
+    <value>Confirmación de contraseña</value>
+  </data>
+  <data name="PasswordConfirmError1" xml:space="preserve">
+    <value>Debes ingresar una confirmación de contraseña.</value>
+  </data>
+  <data name="PasswordConfirmError2" xml:space="preserve">
+    <value>La contraseña y la confirmación no concuerdan.</value>
+  </data>
+  <data name="PasswordConfirmPlaceHolder" xml:space="preserve">
+    <value>Ingresa una confirmación de contraseña...</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="RegisterMessge" xml:space="preserve">
+    <value>Su usuario se ha registrado correctamente, se envió un correo electrónico para confirmar la cuenta de usuario.</value>
+  </data>
+  <data name="AddressError" xml:space="preserve">
+    <value>Vous devez indiquer une adresse.</value>
+  </data>
+  <data name="CityPlaceHolder" xml:space="preserve">
+    <value>Sélectionnez votre ville...</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="DepartmentError" xml:space="preserve">
+    <value>Vous devez choisir un département.</value>
+  </data>
+  <data name="DepartmentPlaceHolder" xml:space="preserve">
+    <value>Sélectionnez votre département...</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="CountryError" xml:space="preserve">
+    <value>Vous devez sélectionner un pays.</value>
+  </data>
+  <data name="CountryPlaceHolder" xml:space="preserve">
+    <value>Sélectionner un pays ou une région...</value>
+  </data>
+  <data name="Error001" xml:space="preserve">
+    <value>Aucun résultat.</value>
+  </data>
+  <data name="Error002" xml:space="preserve">
+    <value>Produit non trouvé.</value>
+  </data>
+  <data name="Error003" xml:space="preserve">
+    <value>Un utilisateur avec cet email est déjà enregistré.</value>
+  </data>
+  <data name="Error004" xml:space="preserve">
+    <value>Aucun résultat.</value>
+  </data>
+  <data name="CityError" xml:space="preserve">
+    <value>Vous devez sélectionner une ville.</value>
+  </data>
+  <data name="PictureSource" xml:space="preserve">
+    <value>Où veux-tu prendre la photo ?!</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="FromCamera" xml:space="preserve">
+    <value>À partir de l’appareil photo</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>À partir de la galerie</value>
+  </data>
+  <data name="NoCameraSupported" xml:space="preserve">
+    <value>L'appareil ne prend pas en charge l'accès à la caméra.!</value>
+  </data>
+  <data name="NoGallerySupported" xml:space="preserve">
+    <value>L'appareil ne prend pas en charge l'accès à la galerie.!</value>
+  </data>
 </root>

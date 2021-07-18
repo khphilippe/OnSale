@@ -27,6 +27,7 @@ namespace OnSale.Prism.ViewModels
         private DelegateCommand _loginCommand;
         private DelegateCommand _registerCommand;
         private DelegateCommand _forgotPasswordCommand;
+       
 
         public LoginPageViewModel(INavigationService navigationService, IApiService apiService)
             : base(navigationService)
@@ -144,9 +145,10 @@ namespace OnSale.Prism.ViewModels
             //TODO: Pending
         }
 
-        private void RegisterAsync()
+        private async void RegisterAsync()
         {
             //TODO: Pending
+            await _navigationService.NavigateAsync(nameof(RegisterPage));
         }
     }
 

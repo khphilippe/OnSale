@@ -62,6 +62,7 @@ namespace OnSale.Prism.ItemViewModels
             await _navigationService.NavigateAsync($"/{nameof(OnSaleMasterDetailPage)}/NavigationPage/{PageName}");
         }
 
+       
 
 
     }

@@ -1,4 +1,6 @@
+using OnSale.Common.Helpers;
 using OnSale.Common.Services;
+using OnSale.Prism.Helpers;
 using OnSale.Prism.ViewModels;
 using OnSale.Prism.Views;
 using Prism;
@@ -31,6 +33,10 @@ namespace OnSale.Prism
         {
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
             containerRegistry.Register<IApiService, ApiService>();
+            containerRegistry.Register<IRegexHelper, RegexHelper>();
+             containerRegistry.Register<IFilesHelper, FilesHelper>();
+
+
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductsPage, ProductsPageViewModel>();
@@ -48,6 +54,8 @@ namespace OnSale.Prism
             containerRegistry.RegisterForNavigation<QualificationsPage, QualificationsPageViewModel>();
             containerRegistry.RegisterForNavigation<QualificationDetailPage, QualificationDetailPageViewModel>();
             containerRegistry.RegisterForNavigation<ProductTabbedPage, ProductTabbedPageViewModel>();
+            containerRegistry.RegisterForNavigation<AddQualificationPage, AddQualificationPageViewModel>();
+            containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
         }
     }
 }
