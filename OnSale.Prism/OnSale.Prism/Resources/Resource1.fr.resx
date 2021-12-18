@@ -340,7 +340,7 @@
     <value>Vous devez sélectionner une ville.</value>
   </data>
   <data name="PictureSource" xml:space="preserve">
-    <value>Où veux-tu prendre la photo ?!</value>
+    <value>Où veux-tu prendre la photo ?</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuler</value>
@@ -352,9 +352,9 @@
     <value>À partir de la galerie</value>
   </data>
   <data name="NoCameraSupported" xml:space="preserve">
-    <value>L'appareil ne prend pas en charge l'accès à la caméra.!</value>
+    <value>L'appareil ne prend pas en charge l'accès à la caméra.</value>
   </data>
   <data name="NoGallerySupported" xml:space="preserve">
-    <value>L'appareil ne prend pas en charge l'accès à la galerie.!</value>
+    <value>L'appareil ne prend pas en charge l'accès à la galerie.</value>
   </data>
 </root>
